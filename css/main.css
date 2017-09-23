@@ -4,6 +4,7 @@
 
 body {
   font-family: 'Roboto', 'Open Sans', sans-serif;
+  background-color: cadetblue;
 }
 
 /*---------------------------------
@@ -12,14 +13,12 @@ body {
 
 header {
   height: 20vh;
-  background-color: cadetblue;
 }
 
 
 /*------navigation--------*/
 
 nav {
-  width: 15vw;
   margin: 0;
   position: relative;
   background-color: cadetblue;
@@ -35,16 +34,59 @@ nav ul {
 }
 
 .activeresponsive {
-  padding-top: 3.2em;
+  padding-top: 4em;
+  background-color: rgba(88, 125, 161, 0.6);
+  width: 100vw;
 }
 
 .activeresponsive li a img {
   padding-bottom: 0.7em;
+  width: 1.5em;
 }
 
 .nav-toggle {
   position: absolute;
+  z-index: 1002;
   top: 1em;
+}
+
+/*-------end of navigation------*/
+
+.bell-icon {
+  position: absolute;
+  right: 2em;
+  top: 1em;
+}
+
+.user-profile {
+  position: absolute;
+  z-index: 1001;
+  width: 6em;
+  border-radius: 50%;
+  top: 4em;
+  left: 50%;
+  transform:  translate(-50%, -50%);
+}
+
+h2 {
+  color: white;
+  position: absolute;
+  top: 4.7em;
+  left: 50%;
+  transform:  translate(-50%, -50%);
+}
+
+/*---------------------------------
+          TRANSITIONS
+---------------------------------*/
+
+.activeresponsive {
+  transition-duration: 0.8s;
+  transition-property: ;
+}
+
+.activeresponsive:active {
+  
 }
 
 /*---------------------------------
@@ -56,7 +98,13 @@ nav ul {
 	
 /*-----toggle button-------*/
 
-/*  .nav-toggle {
+}
+  
+@media screen and (min-width: 768px) {
+	
+/*-----toggle button-------*/
+
+  .nav-toggle {
       display: none;
   }
   
@@ -64,5 +112,5 @@ nav ul {
     display: block;
   }
   
-} */
+}
 
