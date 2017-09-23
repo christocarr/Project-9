@@ -12,31 +12,53 @@ body {
 
 header {
   height: 20vh;
-  background-color: aqua;
 
 }
 
 .upper-header {
 	height: 10vh;
-	border: solid black 1px;
-	display: flex;
 }
 
 /*------navigation--------*/
 
+nav {
+  width: 25vw;
+  background-color: darkblue;
+  margin: 0;
+  position: relative;
+}
+
+nav ul {
+  list-style: none;
+}
+
+.active li {
+  display: none;
+  
+}
 
 
+.responsive li a img {
+  display: inline-block;
+  float: left;
+}
 
 /*---------------------------------
           Media Queries
 ---------------------------------*/
 
 
-media screen and (min-width: 320px) {
+@media screen and (min-width: 320px) {
 	
-	/*-----toggle button-------*/
-	.nav-toggle {
-		display: none;
-	}
-	
+/*-----toggle button-------*/
+
+  .nav-toggle {
+      display: none;
+  }
+  
+  .active li a {
+    display: block;
+  }
+  
 }
+
