@@ -12,35 +12,39 @@ body {
 
 header {
   height: 20vh;
-
+  background-color: cadetblue;
 }
 
-.upper-header {
-	height: 10vh;
-}
 
 /*------navigation--------*/
 
 nav {
-  width: 25vw;
-  background-color: darkblue;
+  width: 15vw;
   margin: 0;
   position: relative;
+  background-color: cadetblue;
 }
 
 nav ul {
   list-style: none;
+  margin: 0;
 }
 
 .active li {
-  display: none;
-  
+  display: none; 
 }
 
+.activeresponsive {
+  padding-top: 3.2em;
+}
 
-.responsive li a img {
-  display: inline-block;
-  float: left;
+.activeresponsive li a img {
+  padding-bottom: 0.7em;
+}
+
+.nav-toggle {
+  position: absolute;
+  top: 1em;
 }
 
 /*---------------------------------
@@ -52,7 +56,7 @@ nav ul {
 	
 /*-----toggle button-------*/
 
-  .nav-toggle {
+/*  .nav-toggle {
       display: none;
   }
   
@@ -60,5 +64,5 @@ nav ul {
     display: block;
   }
   
-}
+} */
 
