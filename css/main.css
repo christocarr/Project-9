@@ -13,45 +13,30 @@ body {
 header {
   height: 20vh;
   background-color: aqua;
-  position: relative;
+
 }
 
-header h1 {
-  display: block;
-  margin: 0;
-  width: 50vw;
-  padding: 0.4em 0 0 0.4em;
+.upper-header {
+	height: 10vh;
+	border: solid black 1px;
+	display: flex;
 }
 
-.notifications {
-  width: 2em;
-  position: absolute;
-  left: 50vw;
-  top: 1em;
-  z-index: 100;
-  
-}
+/*------navigation--------*/
 
-.user-profile {
-  width: 40vw;
-  height: 100%;
-  position: absolute;
-  right: 0;
-  top: 0;
-  z-index: 101;
-  border-left: 1px solid white;
-  padding-left: 0.5em;
-}
 
-.user-profile h2 {
-  display: block;
-  margin: 0;
-  margin: 0.6em 0.4em 0 0;
-}
 
-.user-avatar {
-  height: 60%;
-  float: left;
-  border-radius: 50%;
-  margin-top: 0.6em;
+
+/*---------------------------------
+          Media Queries
+---------------------------------*/
+
+
+media screen and (min-width: 320px) {
+	
+	/*-----toggle button-------*/
+	.nav-toggle {
+		display: none;
+	}
+	
 }
