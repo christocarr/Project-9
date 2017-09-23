@@ -63,7 +63,7 @@ nav ul {
   z-index: 1001;
   width: 6em;
   border-radius: 50%;
-  top: 4em;
+  top: 6em;
   left: 50%;
   transform:  translate(-50%, -50%);
 }
@@ -71,7 +71,7 @@ nav ul {
 h2 {
   color: white;
   position: absolute;
-  top: 4.7em;
+  top: 6.5em;
   left: 50%;
   transform:  translate(-50%, -50%);
 }
@@ -96,11 +96,36 @@ h2 {
 
 @media screen and (min-width: 320px) {
 	
-/*-----toggle button-------*/
+
 
 }
   
 @media screen and (min-width: 768px) {
+  
+  .nav-toggle img {
+    width: 2.2em;
+  }
+  
+  .activeresponsive li a img {
+    width: 1.9em;
+    padding-bottom: 1em;
+  }
+	
+  .bell-icon {
+    width: 2em;
+  }
+
+  .user-profile {
+    width: 7.5em;
+  }
+
+  h2 {
+    font-size: 1.7em;
+  }
+
+}
+
+@media screen and (min-width: 1024px) {
 	
 /*-----toggle button-------*/
 
