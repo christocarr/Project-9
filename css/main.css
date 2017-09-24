@@ -3,8 +3,13 @@
 }
 
 body {
+	height: 100vh;
   font-family: 'Roboto', 'Open Sans', sans-serif;
   background-color: cadetblue;
+}
+
+main {
+	height: 100vh;
 }
 
 /*---------------------------------
@@ -12,7 +17,7 @@ body {
 ---------------------------------*/
 
 header {
-  height: 20vh;
+  height: 30vh;
 }
 
 
@@ -76,6 +81,12 @@ h2 {
   transform:  translate(-50%, -50%);
 }
 
+/*---------chart styles-----------*/
+
+.charts {
+	padding-top: 2em;
+}
+
 /*---------------------------------
           TRANSITIONS
 ---------------------------------*/
@@ -132,6 +143,8 @@ h2 {
 }
 
 @media screen and (min-width: 1024px) {
+	
+
 	
 /*-----toggle button-------*/
 
@@ -191,6 +204,23 @@ h2 {
     padding-bottom: 2em;
     padding-left: 1em;
   }
+	
+	/*---------charts---------*/
+	
+	.charts {
+		padding-top: 2em;
+		display: flex;
+		flex-direction: column;
+		float: right;
+		width: 90%;
+		height: 100vh;
+	}
+	
+	.charts canvas {
+		padding-bottom: 2.5em;
+		width: 90%;
+		margin: auto;
+	}
 
 }
 
