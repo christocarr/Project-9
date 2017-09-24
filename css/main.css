@@ -2,14 +2,24 @@
   box-sizing: border-box;
 }
 
+html {
+  height: 100vh;
+}
+  
 body {
-	height: 100vh;
   font-family: 'Roboto', 'Open Sans', sans-serif;
   background-color: cadetblue;
 }
 
 main {
-	height: 100vh;
+  position: relative;
+  margin-top: 2.2em;
+  height: 90vh;
+  /*background-color: darkgrey;*/
+}
+
+footer {
+  float: right;
 }
 
 /*---------------------------------
@@ -60,31 +70,43 @@ nav ul {
 .bell-icon {
   position: absolute;
   right: 2em;
-  top: 1em;
+  top: 1.4em;
 }
 
 .user-profile {
   position: absolute;
   z-index: 1001;
-  width: 6em;
+  width: 5.5em;
   border-radius: 50%;
-  top: 6em;
+  top: 5em;
   left: 50%;
   transform:  translate(-50%, -50%);
 }
 
 h2 {
+  text-align: center;
+  width: auto;
   color: white;
   position: absolute;
-  top: 6.5em;
+  top: 6em;
   left: 50%;
   transform:  translate(-50%, -50%);
 }
+
+/*---------------------------------
+             MAIN
+---------------------------------*/
 
 /*---------chart styles-----------*/
 
 .charts {
 	padding-top: 2em;
+}
+
+/*---------footer---------*/
+
+footer {
+  height: 20vh;
 }
 
 /*---------------------------------
@@ -114,6 +136,10 @@ h2 {
 }
   
 @media screen and (min-width: 768px) {
+  
+  main {
+    margin-top: 4.8em;
+  }
   
   .nav-toggle img {
     width: 2.2em;
@@ -145,7 +171,6 @@ h2 {
 @media screen and (min-width: 1024px) {
 	
 
-	
 /*-----toggle button-------*/
 
   .nav-toggle {
@@ -188,15 +213,15 @@ h2 {
   /*-------side navigation------*/
   
   aside {
-    display: block;
+    display: inline-block;
     float: left;
     width: 7em;
-    height: 100vh;
     background-color: rgb(88, 125, 161);
     padding-top: 2em;
   }
   
   aside nav {
+    height: 100vh;
     background-color: rgb(88, 125, 161);
   }
   
