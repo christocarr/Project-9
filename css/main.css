@@ -33,25 +33,19 @@ header {
 
 /*------navigation--------*/
 
-nav {
-  margin: 0;
-  position: relative;
-  background-color: cadetblue;
-}
-
-nav ul {
-  list-style: none;
-  margin: 0;
-}
 
 .active li {
-  display: none; 
+  display: none;
 }
 
 .activeresponsive {
   padding-top: 4em;
   background-color: rgb(88, 125, 161);
   width: 100vw;
+}
+
+.activeresponsive li {
+  list-style: none;
 }
 
 .activeresponsive li a img {
@@ -97,7 +91,15 @@ h2 {
              MAIN
 ---------------------------------*/
 
+.side-nav {
+  display: none;
+}
+ 
 /*---------chart styles-----------*/
+
+.side-nav {
+ display: contents;
+}
 
 .charts {
 	padding-top: 2em;
@@ -128,15 +130,12 @@ footer {
 
 
 @media screen and (min-width: 320px) {
-	
-  aside {
-    display: none;
-  }
-
+  
 }
   
 @media screen and (min-width: 768px) {
-  
+
+
   main {
     margin-top: 4.8em;
   }
@@ -162,10 +161,6 @@ footer {
     font-size: 1.7em;
   }
   
-  aside {
-    display: none;
-  }
-
 }
 
 @media screen and (min-width: 1024px) {
@@ -211,42 +206,42 @@ footer {
   .bell-icon, h2, .user-profile {
 
   }
-
   
-  /*-------side navigation------*/
-  
-  aside {
-    height: 100vh;
-    display: inline-block;
-    float: left;
+  .side-nav {
+    position: fixed;
+    top: 30vh;
+    left: 0;
     width: 7em;
-    background-color: rgb(88, 125, 161);
-    padding-top: 2em;
-  }
-  
-  aside nav {
     height: 100vh;
     background-color: rgb(88, 125, 161);
   }
-  
-  aside nav li {
-    padding-bottom: 2em;
-    padding-left: 1em;
+
+  .side-nav ul {
+    padding-top: 2em;
+    list-style: none;
   }
-	
-	/*---------charts---------*/
-	
-	.charts {
-		padding-top: 2em;
-		display: flex;
-		flex-direction: column;
-		width: 70em;
-        margin: auto;
-	}
-	
-	.chartjs-render-monitor {
-		padding-bottom: 4em;
-	}
+
+  .side-nav li {
+    margin-bottom: 2.5em;
+  }
+
+  .side-nav li a {
+    padding: 1.5em 1em 1em;
+  }
+  
+  /*---------charts---------*/
+
+  .charts {
+      padding-top: 2em;
+      display: flex;
+      flex-direction: column;
+      width: 70em;
+      margin: auto;
+  }
+
+  .chartjs-render-monitor {
+      padding-bottom: 4em;
+  }
  
     
 }
