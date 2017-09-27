@@ -42,6 +42,7 @@ header {
   padding-top: 4em;
   background-color: rgb(88, 125, 161);
   width: 100vw;
+  margin: 0;
 }
 
 .activeresponsive li {
@@ -91,15 +92,31 @@ h2 {
              MAIN
 ---------------------------------*/
 
-.side-nav {
-  display: none;
-}
- 
-/*---------chart styles-----------*/
 
 .side-nav {
- display: contents;
+  position: fixed;
+  top: 30vh;
+  left: 0;
+  width: 7em;
+  height: 100vh;
+  background-color: rgb(88, 125, 161);
 }
+
+.side-nav ul {
+  padding-top: 2em;
+  list-style: none;
+}
+
+.side-nav li {
+  margin-bottom: 2.5em;
+}
+
+.side-nav li a {
+  padding: 1.5em 1em 1em;
+}
+  
+
+/*---------chart styles-----------*/
 
 .charts {
 	padding-top: 2em;
@@ -130,11 +147,17 @@ footer {
 
 
 @media screen and (min-width: 320px) {
-  
+  .side-nav {
+    display: none;
+  }
+ 
 }
   
 @media screen and (min-width: 768px) {
 
+   .side-nav {
+     display: none;
+  }
 
   main {
     margin-top: 4.8em;
@@ -165,10 +188,7 @@ footer {
 
 @media screen and (min-width: 1024px) {
   
-  html {
-    height: 100vh;
-  }
-
+  
 /*-----toggle button-------*/
 
   .nav-toggle {
@@ -182,7 +202,7 @@ footer {
   /*-----------header----------*/
   
    header {
-    height: 10em;
+    height: 30vh;
   }
   
   .user-profile {
@@ -208,25 +228,7 @@ footer {
   }
   
   .side-nav {
-    position: fixed;
-    top: 30vh;
-    left: 0;
-    width: 7em;
-    height: 100vh;
-    background-color: rgb(88, 125, 161);
-  }
-
-  .side-nav ul {
-    padding-top: 2em;
-    list-style: none;
-  }
-
-  .side-nav li {
-    margin-bottom: 2.5em;
-  }
-
-  .side-nav li a {
-    padding: 1.5em 1em 1em;
+    display: inline-block;
   }
   
   /*---------charts---------*/
